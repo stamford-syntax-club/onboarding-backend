@@ -20,6 +20,7 @@ Create an API endpoint to insert new metadata into our MongoDB collection.
   "fileKey": "2024_it_bil_.pdf",
   "major": "Information Technology",
   "major_abbrv": "IT",
+  "language": "Bilingual",
   "faculty": "Business and Technology",
   "year": "2022"
 }
@@ -33,6 +34,7 @@ Create an API endpoint to insert new metadata into our MongoDB collection.
   "fileKey": "2024_it_bil_.pdf",
   "major": "Information Technology",
   "major_abbrv": "IT",
+  "language": "Bilingual",
   "faculty": "Business and Technology",
   "year": "2022"
 }
