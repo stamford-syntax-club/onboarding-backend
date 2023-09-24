@@ -1,20 +1,21 @@
 import dotenv from "dotenv";
-import express, { Express, Request, Response } from "express";
-import cors from "cors";
-
-
+import { getConnection } from "./utils/mongoconnection";
 dotenv.config();
-const app: Express = express();
-const port = process.env.PORT;
 
-app.get("/", (req: Request, res: Response) => {
-	res.send("Express + TypeScript Server");
-});
+/*
+ to run the program, run `npm run dev` in your terminal
 
-app.use(cors())
+ when you save your changes, the program will automatically restart
+ 
+ to stop the program, press `ctrl + c` in your terminal
+*/
 
-// register routes here!
+async function main() {
+  console.log("Welcome :3");
+  // we already establish the connection to MongoDB for you
+  const client = await getConnection();
 
-app.listen(port, () => {
-	console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
-});
+  // your code goes here!
+}
+
+main();
